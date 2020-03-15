@@ -11,7 +11,8 @@ chirp_dur_samp = fs*chirp_dur;
 start_inc = floor(f0*2^N / fs);
 end_inc = floor(f1*2^N / fs);
 
-counter_inc = (end_inc-start_inc)/chirp_dur_samp;
+% Now calculated within firmware by Matlab Function block
+% counter_inc = (end_inc-start_inc)/chirp_dur_samp;
 
 stoptime = chirp_dur;
 
